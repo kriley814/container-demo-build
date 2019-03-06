@@ -11,7 +11,7 @@ node {
         /* This builds the actual image; synonymous to
          * docker build on the command line */
 
-        app = docker.build("kriley/hellonode")
+        app = docker.build("container_build_demo")
     }
 
     stage('Test image') {
