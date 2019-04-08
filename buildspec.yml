@@ -8,6 +8,7 @@ phases:
   build:
     commands:
       - docker build -t container_build_demo .
+      - docker tag conatiner_build_demo 959844384370.dkr.ecr.us-west-2.amazonaws.com/container_build_demo
       - docker images 
       - printenv
   post_build:
