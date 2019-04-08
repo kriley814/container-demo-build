@@ -9,6 +9,7 @@ phases:
     commands:
       - docker build -t container_build_demo .
       - docker images 
+      - printenv
   post_build:
     commands:
       - echo Build completed on `date`
