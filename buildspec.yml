@@ -25,3 +25,4 @@ phases:
       - echo Build completed on `date`
       - echo Pushing the Docker image...
       - docker push 959844384370.dkr.ecr.us-west-2.amazonaws.com/container_build_demo:latest
+      - docker push 959844384370.dkr.ecr.us-west-2.amazonaws.com/container_build_demo:$CODEBUILD_BUILD_ID
